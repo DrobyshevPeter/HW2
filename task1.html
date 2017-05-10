@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <form action="/">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="name">Email</label><br>
+        <input type="text" name="email" id="email"><br>
+        <p>
+            Sex <br>
+            <input type="radio" name="male" id="male">Male
+            <input type="radio" name="female" id="female">Female
+        </p>
+        <p>
+            Current status <br>
+            <input type="checkbox">Student <br>
+            <input type="checkbox">Employed <br>
+            <input type="checkbox">Unemployed <br>
+        </p>
+        <p>
+            Month and Year of birth <br>
+            <select name="month" id="month">
+                <option value="january">January</option>
+            </select>
+            <select name="year" id="year">
+                <option value="1984">1984</option>
+            </select>
+        </p>
+        <p>
+            <label for="sandt">Skills and Technologies</label> <br>
+            <select name="snt" multiple size="10" id="sandt">
+                <optgroup label="Tech skills">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="git">git</option>
+                </optgroup>
+                <optgroup label="Soft skills">
+                    <option value="tm">Time management</option>
+                    <option value="proact">Proactivity</option>
+                    <option value="Teamwork">Teamwork</option>
+                    <option value="Leadership">Leadership</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="photo">Photo</label> <br>
+            <input type="file" name="photo" id="photo">
+        </p>
+        <p>
+            <label for="comment">Comments</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </p>
+        <input type="submit" name="submit" value="Save">
+    </form>
+</body>
+</html>
